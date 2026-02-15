@@ -4,9 +4,10 @@ const  express = require("express")
 
 const app = express() //cretate server
 
-app.get('/home',(req,res)=>{
-    req.send("welcome to home page")
-})
+ app.post('/notes',(req,res)=>{
+    console.log(req.body);
+    
+ })
 
 
 
